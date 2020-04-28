@@ -5,7 +5,7 @@ LABEL maintainer="AES-ECS-DEMO" \
 
 COPY --chown=www-data:www-data . /srv/app
 
-COPY .docker/vhost.conf /etc/apache2/sites-available/000-default.conf 
+COPY vhost.conf /etc/apache2/sites-available/000-default.conf 
 
 WORKDIR /srv/app
 
