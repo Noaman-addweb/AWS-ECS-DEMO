@@ -11,7 +11,7 @@ phases:
     # login to Elastic container registry
     - eval $(aws ecr get-login --region us-east-1 --no-include-email | sed 's|https://||')
     - REPOSITORY_URI=020043676814.dkr.ecr.us-east-1.amazonaws.com/laravel-docker-aws
-    - IMAGE_TAG=latest
+    - IMAGE_TAG=1.0
   build:
     commands:
     - echo Build started on `date`
